@@ -1,0 +1,21 @@
+{
+  "name": "vitae-core",
+  "version": "0.1.0",
+  "description": "",
+  "main": "app/main.js",
+  "contributors": [
+    "Kenneth Bogner <tuxagon91@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "neon-cli": "^0.4.0",
+    "tauri": "^0.6.3"
+  },
+  "scripts": {
+    "install": "neon build",
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^9.0.4"
+  }
+}
