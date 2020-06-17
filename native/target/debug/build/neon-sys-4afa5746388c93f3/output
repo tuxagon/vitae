@@ -1,0 +1,31 @@
+Skipping node-gyp installation as part of npm install.
+added 96 packages from 70 contributors and audited 96 packages in 3.147s
+found 7 vulnerabilities (3 low, 1 moderate, 3 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+> @ build-debug /home/Alex/vitae-core/native/target/debug/build/neon-sys-4afa5746388c93f3/out/native
+> node-gyp build --debug
+
+make: Entering directory '/home/Alex/vitae-core/native/target/debug/build/neon-sys-4afa5746388c93f3/out/native/build'
+  CXX(target) Debug/obj.target/neon/src/neon.o
+  SOLINK_MODULE(target) Debug/obj.target/neon.node
+  COPY Debug/neon.node
+make: Leaving directory '/home/Alex/vitae-core/native/target/debug/build/neon-sys-4afa5746388c93f3/out/native/build'
+TARGET = Some("x86_64-unknown-linux-gnu")
+HOST = Some("x86_64-unknown-linux-gnu")
+AR_x86_64-unknown-linux-gnu = None
+AR_x86_64_unknown_linux_gnu = None
+HOST_AR = None
+AR = None
+running: "ar" "crs" "/home/Alex/vitae-core/native/target/debug/build/neon-sys-4afa5746388c93f3/out/libneon.a" "/home/Alex/vitae-core/native/target/debug/build/neon-sys-4afa5746388c93f3/out/native/build/Debug/obj.target/neon/src/neon.o"
+exit code: 0
+cargo:rustc-link-lib=static=neon
+cargo:rustc-link-search=native=/home/Alex/vitae-core/native/target/debug/build/neon-sys-4afa5746388c93f3/out
+CXXSTDLIB_x86_64-unknown-linux-gnu = None
+CXXSTDLIB_x86_64_unknown_linux_gnu = None
+HOST_CXXSTDLIB = None
+CXXSTDLIB = None
+cargo:rustc-link-lib=stdc++
+cargo:rerun-if-env-changed=npm_config_target
+cargo:rerun-if-env-changed=npm_config_arch
+cargo:rerun-if-env-changed=npm_config_target_arch

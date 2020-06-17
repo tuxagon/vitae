@@ -1,0 +1,30 @@
+In file included from ../src/neon.cc:10:0:
+../src/neon_task.h: In member function ‘void neon::Task::complete()’:
+../src/neon_task.h:62:70: warning: ‘v8::Local<v8::Value> node::MakeCallback(v8::Isolate*, v8::Local<v8::Object>, v8::Local<v8::Function>, int, v8::Local<v8::Value>*)’ is deprecated: Use MakeCallback(..., async_context) [-Wdeprecated-declarations]
+     node::MakeCallback(isolate_, context->Global(), callback, 2, argv);
+                                                                      ^
+In file included from ../node_modules/nan/nan.h:54:0,
+                 from ../src/neon.cc:2:
+/home/Alex/.cache/node-gyp/12.18.0/include/node/node.h:182:50: note: declared here
+                 NODE_EXTERN v8::Local<v8::Value> MakeCallback(
+                                                  ^
+/home/Alex/.cache/node-gyp/12.18.0/include/node/node.h:101:42: note: in definition of macro ‘NODE_DEPRECATED’
+     __attribute__((deprecated(message))) declarator
+                                          ^
+../src/neon.cc: In function ‘void Neon_Class_SetClassMap(v8::Isolate*, void*, Neon_DropCallback)’:
+../src/neon.cc:329:41: warning: ‘void node::AtExit(void (*)(void*), void*)’ is deprecated: Use the three-argument variant of AtExit() or AddEnvironmentCleanupHook() [-Wdeprecated-declarations]
+   node::AtExit(cleanup_class_map, holder);
+                                         ^
+In file included from ../node_modules/nan/nan.h:54:0,
+                 from ../src/neon.cc:2:
+/home/Alex/.cache/node-gyp/12.18.0/include/node/node.h:702:22: note: declared here
+     NODE_EXTERN void AtExit(void (*cb)(void* arg), void* arg = nullptr));
+                      ^
+/home/Alex/.cache/node-gyp/12.18.0/include/node/node.h:101:42: note: in definition of macro ‘NODE_DEPRECATED’
+     __attribute__((deprecated(message))) declarator
+                                          ^
+In file included from ../src/neon.cc:8:0:
+../src/neon_string.h: In member function ‘v8::Local<v8::String> neon::Slice::ToJsString(v8::Isolate*, const char*)’:
+../src/neon_string.h:28:27: warning: ignoring return value of ‘bool v8::MaybeLocal<T>::ToLocal(v8::Local<S>*) const [with S = v8::String; T = v8::String]’, declared with attribute warn_unused_result [-Wunused-result]
+     maybe.ToLocal(&result);
+                           ^
