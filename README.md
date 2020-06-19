@@ -21,3 +21,23 @@ To start the Tauri app, run
 $ yarn tauri dev
 ```
 
+## development
+
+Ensure you start the devserver for the UI first by running the following in separate tabs from the `src-frontend` directory
+
+```
+$ npm run start
+```
+```
+$ npm run server
+```
+
+In a third tab, you can start the tauri app with the following from the root directory
+
+```
+$ npx tauri dev
+```
+or
+```
+$ yarn tauri dev
+```
